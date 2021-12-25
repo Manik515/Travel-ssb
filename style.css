@@ -1,0 +1,310 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    font-size: 60px;
+    font-weight: 700;
+}
+h2{
+    font-size: 40px;
+    font-weight: 400;
+}
+h3{
+    font-size: 25px;
+    font-weight: 400;
+}
+p{
+    font-size: 20px;
+}
+.hero-area{
+    background-image: linear-gradient(rgba(6, 82, 112, 0.50),transparent), url("../images/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+.logo{
+    font-size: 30px;
+    flex: 2 1 40px;
+}
+.main-header{
+    color: white;
+    position: sticky;
+    z-index: 1;
+} 
+nav{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    min-height: 10vh;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    flex: 1 1 40px;
+    justify-content: space-around;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white; 
+    padding: 5px;  
+    border-bottom: 3px solid transparent;
+}
+nav ul li a:hover{
+    color: rgb(22, 230, 133);
+    border-bottom: 3px solid blueviolet;
+    border-radius: 3px;
+    transition: 0.1s ease-in;
+}
+.hero-section{
+    min-width: 75vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    text-align: center;
+    position: relative;
+    top: -40px;
+}
+.hero-section h1{
+    margin-bottom: 10px;
+}
+.hero-section h2{
+    line-height: 60px;
+}
+.bottom{
+    margin-top: 35px;
+    padding: 15px 30px;
+    height: 50px;
+    width: 155px;
+    font-size: 20px;
+    border-radius: 15px;
+    background-color: #09e7e7;
+    color: white;
+    border: none;
+    transition: 0.3s ease-in;
+    box-shadow: 0px 10px 20px 0px rgba(228, 17, 122, 0.16);
+}
+.bottom:hover{
+
+    color:rgb(108, 7, 202);
+}
+#about-us{
+    width: 90%;
+    min-height: 100vh;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    position: relative;
+}
+.text-area{
+    width: 48%;
+    padding: 25px;
+    margin-left: 15px;
+}
+.text-area h3, .header h3{
+    color: rgb(3, 184, 3);
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.description{
+    margin: 40px 0;
+}
+.text-area p{
+    margin-bottom: 20px;
+}  
+.text-area button{
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    background-color: #1eebeb;
+    color: rgb(255, 255, 255, 5.086);
+    border: 3px solid transparent;  
+    transition: 0.7s ease-in;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.16);
+}
+.text-area button:hover{
+    background-color:white;
+    color: rgb(231, 10, 10);
+    border: 3px solid salmon;
+
+}
+.image-area{
+    display:flex;
+    width: 52%;
+    padding-left: 20px;
+    position: relative;
+    justify-content: space-around;
+}
+.img-one, .img-two{
+    border: none;
+    width: 300px;
+    height: 450px;
+    border-radius: 30px 10px 30px 10px;
+    padding: 10px;
+}
+ .img-one{
+    position: absolute; 
+    left: 14px;
+    top: 50px;
+    transition: 0.5s; 
+}
+.img-two{
+    position: absolute;
+    bottom: 50px;
+    right: 14px; 
+    transition: 0.5s; 
+} 
+.img-one:hover{
+    transform: translate(0, -15%);
+}
+.img-two:hover{
+    transform: translate(0, -25%); 
+}
+.our-packages{
+    width: 90%;
+    min-height: 100vh;
+    min-width: 100px;
+    margin: auto;
+    margin-top: 90px; 
+}
+.header{
+    text-align: center;
+}
+.card{
+    display:flex;
+    justify-content: center;
+    margin: 20px;
+    padding: 0px;
+}
+.left img{
+    width: 100%;
+    height: 350px;
+    border-radius: 30px;
+    transition: 0.3s ease-in;
+}
+.left{
+    width: 50%;
+    margin-top: 80px;
+}
+.right{
+    width: 50%;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.reverse{
+    padding-left: 0px;
+    padding-right: -25px;
+}
+.card-title{
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+#contact-us{
+    min-height: 100vh;
+    margin-top: 100px;
+}
+.header p{
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 50px;
+}
+form{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+input, textarea{
+    margin-bottom: 30px;
+    padding: 25px;
+    width: 550px;
+    border-radius: 15px;
+    border: none;
+    background: #F8F8F8;
+    resize: none;
+}
+::placeholder{
+    color: #989999;
+    font-size: 18px;
+    padding-left: 15px;
+}
+form button{
+    padding: 20px 15px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: #1eebeb;
+    color: rgb(255, 255, 255, 5.086);
+    border: none;
+    /* display: flex;
+    justify-content: space-between;
+    justify-content: center; */
+}
+footer{
+    margin-top: 130px;
+    min-height: 35vh;
+    background: #163939;
+    position: relative;
+}
+.footer-head{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.footer-nav{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.footer-head h3{
+    font-size: 16px;
+}
+ .footer-nav ul{
+    list-style: none;
+    margin-top: 15px;
+
+}
+.footer-nav ul li a{
+    font-size: 13px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px 0;
+    color: white;
+}
+.branding{
+    text-align: center;
+    position: absolute;
+    left: 40%;
+    bottom: 30px;
+}
+.branding h3{
+    margin-bottom: 10px;
+}
+.social-link{
+    margin-right: 50px;
+    padding-left: 10px;
+}
+
+.social-link ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+} 
+.social-link ul li{
+    margin-top: 15px;
+}
+.social-link ul li a{
+    color: white;
+}
